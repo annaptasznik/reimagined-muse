@@ -4,10 +4,15 @@ Project ideas and notes on google doc URL:
 https://docs.google.com/document/d/1J-EhRF2pNlXsLHT5RU2ilyVfm4QQmpEDWUPV2UvQo_k/edit
 
 dev env:
+
    Git repo:                                https://github.com/Suberri/reimagined-muse
+   
    Trello project:                          https://trello.com/b/b25790Rf/dev-env-setup
+   
    Chat room at Gitter                      https://gitter.im/Suberri/reimagined-muse
+   
    Evothings workbench/Viewer               https://evothings.com/
+   
 
 Power of Art Hackathon
 
