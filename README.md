@@ -13,6 +13,13 @@ dev env:
    
    Evothings workbench/Viewer               https://evothings.com/
    
+   Android iBeacon scanner repo             https://github.com/AltBeacon/android-beacon-library-reference
+   
+   Understanding the different types of BLE Beacons   https://developer.mbed.org/blog/entry/BLE-Beacons-URIBeacon-AltBeacons-iBeacon/
+   
+   
+   
+   
 
 Power of Art Hackathon
 
