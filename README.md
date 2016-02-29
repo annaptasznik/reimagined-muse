@@ -29,7 +29,7 @@ dev env:
 ------------------------------------------------------------------------------------------------------------   
    
 
-Power of Art Hackathon
+[Power of Art Hackathon] (http://www.philamuseum.org/calendarEvents/627-541.html)
 
 March 11-13
 
