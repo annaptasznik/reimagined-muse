@@ -24,6 +24,27 @@ var app = (function()
 	// Timer that displays list of beacons.
 	var updateTimer = null;
 
+    app.ui.onShowArtwork = function()
+    {
+        app.startScan(app.ui.deviceFound);
+        app.ui.displayStatus('Artworks');
+        app.ui.updateTimer = setInterval(app.ui.displayDeviceList, 500);
+    };   
+    
+    app.ui.onTrivia = function()
+    {
+        app.startScan(app.ui.deviceFound);
+        app.ui.displayStatus('Trivia');
+        app.ui.updateTimer = setInterval(app.ui.displayDeviceList, 500);
+    };       
+    
+    app.ui.onArtgram = function()
+    {
+        app.startScan(app.ui.deviceFound);
+        app.ui.displayStatus('ArtGram');
+        app.ui.updateTimer = setInterval(app.ui.displayDeviceList, 500);
+    };   
+    
 	app.initialize = function()
 	{
 		document.addEventListener(
@@ -112,8 +133,8 @@ var app = (function()
 				// Create tag to display beacon data.
 	    var element1 = $('<li> <H1> Detected beacons </H1> </li>');
         
-        $('#warning').remove();
-        $('#found-beacons').append(element1);
+/*         $('#warning').remove();
+        $('#found-beacons').append(element1); */
 
 		var timeNow = Date.now();
 
