@@ -6,10 +6,10 @@ https://docs.google.com/document/d/1J-EhRF2pNlXsLHT5RU2ilyVfm4QQmpEDWUPV2UvQo_k/
 dev env:
 
     Git repo:                               
-        https://github.com/Suberri/reimagined-muse
+        [https://github.com/Suberri/reimagined-muse]
    
     Trello project:                          
-        https://trello.com/b/b25790Rf/dev-env-setup
+        [https://trello.com/b/b25790Rf/dev-env-setup]
    
     Chat room at Gitter:                      
         https://gitter.im/Suberri/reimagined-muse
@@ -21,7 +21,7 @@ dev env:
         https://github.com/AltBeacon/android-beacon-library-reference
 
         
-------------------------------------------------------------------------------------------------------
+ =========================================================================================
 
                 General info about Beacons
               ---------------------------
