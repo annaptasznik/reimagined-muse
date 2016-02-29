@@ -4,9 +4,9 @@ Project ideas and notes on google doc URL:
 https://docs.google.com/document/d/1J-EhRF2pNlXsLHT5RU2ilyVfm4QQmpEDWUPV2UvQo_k/edit
 
 dev env:
-        [I'm an inline-style link](https://www.google.com)
+        
     Git repo:                               
-        [https://github.com/Suberri/reimagined-muse]
+        (https://github.com/Suberri/reimagined-muse)
    
     Trello project:                          
         [https://trello.com/b/b25790Rf/dev-env-setup]
