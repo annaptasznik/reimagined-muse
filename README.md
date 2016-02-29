@@ -1,7 +1,6 @@
 # reimagined-muse
 
-Project ideas and notes on google doc URL:
-https://docs.google.com/document/d/1J-EhRF2pNlXsLHT5RU2ilyVfm4QQmpEDWUPV2UvQo_k/edit
+[Project ideas and notes on google doc. Please add your idea to this doc] (https://docs.google.com/document/d/1J-EhRF2pNlXsLHT5RU2ilyVfm4QQmpEDWUPV2UvQo_k/edit)
 
 dev env:
         
@@ -20,11 +19,10 @@ dev env:
               ---------------------------
               
 [Understanding the different types of BLE Beacons] (https://developer.mbed.org/blog/entry/BLE-Beacons-URIBeacon-AltBeacons-iBeacon/)
-
 [What are region Monitoring and Ranging?] (https://community.estimote.com/hc/en-us/articles/203356607-What-are-region-Monitoring-and-Ranging-)
- 
 [Beacon Tech Overview] (http://developer.estimote.com/)
-         
+[How do beacons work? The physics of beacon tech] (http://blog.estimote.com/post/106913675010/how-do-beacons-work-the-physics-of-beacon-tech)
+[What is a beacon protocol?] (https://community.estimote.com/hc/en-us/articles/208546097-What-is-a-beacon-protocol-Can-beacons-broadcast-multiple-packets-simultaneously-)
          
 ------------------------------------------------------------------------------------------------------------   
    
