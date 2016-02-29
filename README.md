@@ -19,7 +19,13 @@ dev env:
    
     Android iBeacon scanner repo:             
         https://github.com/AltBeacon/android-beacon-library-reference
-   
+
+        
+------------------------------------------------------------------------------------------------------
+
+                General info about Beacons
+              ---------------------------
+              
     Understanding the different types of BLE Beacons:   
         https://developer.mbed.org/blog/entry/BLE-Beacons-URIBeacon-AltBeacons-iBeacon/
    
@@ -29,7 +35,8 @@ dev env:
     Beacon Tech Overview:
         http://developer.estimote.com/
          
-   
+         
+------------------------------------------------------------------------------------------------------------   
    
 
 Power of Art Hackathon
