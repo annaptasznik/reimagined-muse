@@ -5,19 +5,30 @@ https://docs.google.com/document/d/1J-EhRF2pNlXsLHT5RU2ilyVfm4QQmpEDWUPV2UvQo_k/
 
 dev env:
 
-   Git repo:                                https://github.com/Suberri/reimagined-muse
+    Git repo:                               
+        https://github.com/Suberri/reimagined-muse
    
-   Trello project:                          https://trello.com/b/b25790Rf/dev-env-setup
+    Trello project:                          
+        https://trello.com/b/b25790Rf/dev-env-setup
    
-   Chat room at Gitter                      https://gitter.im/Suberri/reimagined-muse
+    Chat room at Gitter:                      
+        https://gitter.im/Suberri/reimagined-muse
    
-   Evothings workbench/Viewer               https://evothings.com/
+    Evothings workbench/Viewer:               
+        https://evothings.com/
    
-   Android iBeacon scanner repo             https://github.com/AltBeacon/android-beacon-library-reference
+    Android iBeacon scanner repo:             
+        https://github.com/AltBeacon/android-beacon-library-reference
    
-   Understanding the different types of BLE Beacons   https://developer.mbed.org/blog/entry/BLE-Beacons-URIBeacon-AltBeacons-iBeacon/
+    Understanding the different types of BLE Beacons:   
+        https://developer.mbed.org/blog/entry/BLE-Beacons-URIBeacon-AltBeacons-iBeacon/
    
-   
+    What are region Monitoring and Ranging?
+        https://community.estimote.com/hc/en-us/articles/203356607-What-are-region-Monitoring-and-Ranging-
+         
+    Beacon Tech Overview:
+        http://developer.estimote.com/
+         
    
    
 
