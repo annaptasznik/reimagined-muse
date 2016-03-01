@@ -22,10 +22,11 @@ html, body {
 }
 body {
     background-image: url("../images/philadelphia-museum-of-art-east-steps2-900-600vp-587x0.jpg");
+    background-position: center center;
     background-repeat:no-repeat;
-    background-size:100%;
-	margin: 0 0.9em 0 0.9em;
-	font-size: 150%;
+    background-size:cover;
+	/* margin: 0 0.9em 0 0.9em; */
+	font-size: 100%;
 	font-size: 7.5vw;
 }
 
@@ -35,7 +36,7 @@ section::before {
 	display: block;
 	width: 100%;
 	height: 1.1em; /* Should correspond to header's height. */
-	margin-bottom: 0.4em;
+/* 	margin-bottom: 0.4em; */
 
 	content: '\0000a0'; /* Non-breaking space (&nbsp;) */
 	font-size: 180%; /* Same as the header's font size. */

@@ -6,13 +6,13 @@
 	<meta charset="utf-8" />
 	<meta name="viewport" content="width=device-width, user-scalable=no,
 		shrink-to-fit=no, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0" />
-        
-	<title>iBeacon Scan</title>
+
+	<title>Philly Art</title>
 
 	<style>
 		@import 'ui/css/evothings-app.css';
 	</style>
-    
+
 	<script>
 	// Redirect console.log to Evothings Workbench.
 	if (window.hyper && window.hyper.log) { console.log = hyper.log }
@@ -27,7 +27,7 @@
 </head>
 
 <body>
-
+<!-- 
 	<header>
 		<button class="back" onclick="history.back()">
 			<img src="ui/images/arrow-left.svg" />
@@ -36,28 +36,10 @@
 		<img class="logotype" src="ui/images/logo.svg" alt="Evothings" />
 
 		<!--<button class="menu" onclick=""><img src="ui/images/menu.svg" /></button>-->
-	</header>
-    
-    <!--
-    <button onclick="app.ui.onShowArtwork()" class="green">Show Artworks</button>
-    <button onclick="app.ui.onTrivia()" class="green">Trivia</button>
-    <button onclick="app.ui.onArtGarm()" class="green">ArtGram</button>
-    -->
+<!-- 	</header> -->
 
-    
-	<h1><center>Welcome to the Philadelphia Art Museum 2016 Hackathon </center></h1>
-	<h1><center>Walk with us into the magic of the ART</center></h1>
-	<p id="warning">*********** To detect iBeacons add beacon UUD to list -background jpg ****************<br> <p>
-	<p id="bList">
-        <H1> Current beacons list</H1>
-        {uuid:'2F234454-CF6D-4A0F-ADF2-F4911BA9FFA6'} Estimote Beacon factory UUID.<br>
-		{uuid:'B9407F30-F5F8-466E-AFF9-25556B57FE6D'} Sample UUIDs for beacons in our lab.<br>
-		{uuid:'F7826DA6-4FA2-4E98-8024-BC5B71E0893E'}<br>
-		{uuid:'8DEEFBB9-F738-4297-8040-96668BB44281'}<br>
-		{uuid:'A0B13730-3A9A-11E3-AA6E-0800200C9A66'}<br>
-		{uuid:'E20A39F4-73F5-4BC4-A12F-17D1AD07A961'}<br>
-		{uuid:'A4950001-C5B1-4B44-B512-1370F02D74DE'}<br>
-		{uuid:'585CDE93-1B01-42CC-9A13-25009BEDC65E'} Dialog Semiconductor <br>
+	<h1><center>Philly Art Museum<br>Hackaton</center></h1>
+	<p id="warning">Detects Galaxy "Locate App" beacon.
 	</p>
 	<ul id="found-beacons" class="dynamic"></ul>
 
