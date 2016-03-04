@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, user-scalable=no,
+		shrink-to-fit=yes, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0" />
+        
+	<title>Philly Art</title>
+
+	<style>
+		@import 'ui/css/evothings-app.css';
+	</style>
+    
+	<script>
+	// Redirect console.log to Evothings Workbench.
+	if (window.hyper && window.hyper.log) { console.log = hyper.log }
+	</script>
+
+	<script src="cordova.js"></script>
+	<script src="libs/jquery/jquery.js"></script>
+	<script src="libs/evothings/evothings.js"></script>
+	<script src="libs/evothings/ui/ui.js"></script>
+	<script src="app.js"></script>
+
+</head>
+
+<body>
+
+	<header>
+		<button class="back" onclick="history.back()">
+			<img src="ui/images/arrow-left.svg" />
+		</button>
+
+		<img class="logotype" src="ui/images/logo.svg" alt="Evothings" />
+
+		<!--<button class="menu" onclick=""><img src="ui/images/menu.svg" /></button>-->
+	</header>
+    
+    <!--
+    <button onclick="app.ui.onShowArtwork()" class="green">Show Artworks</button>
+    <button onclick="app.ui.onTrivia()" class="green">Trivia</button>
+    <button onclick="app.ui.onArtGarm()" class="green">ArtGram</button>
+    -->
+
+    
+	<h1><center>Welcome to the Philadelphia Art Museum 2016 Hackathon </center></h1>
+	<h1><center>Walk with us into the magic of the ART</center></h1>
+	<p id="warning">
+        *********** To detect iBeacons add beacon UUD to list -background jpg ****************
+    </p>
+	<p id="bList">
+        <H1> Current beacons list</H1>
+        ...FFA6 Estimote Beacon factory UUID.<br>
+		...FE6D Sample UUIDs for beacons in our lab.<br>
+		...893E<br>
+		...4281<br>
+		...9A66<br>
+		...A961<br>
+		...74DE<br>
+		...C65E Dialog Semiconductor <br>
+	</p>
+	<ul id="found-beacons" class="dynamic"></ul>
+
+</body>
+
+</html>

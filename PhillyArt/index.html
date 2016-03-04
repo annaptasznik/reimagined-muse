@@ -5,8 +5,8 @@
 
 	<meta charset="utf-8" />
 	<meta name="viewport" content="width=device-width, user-scalable=no,
-		shrink-to-fit=no, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0" />
-
+		shrink-to-fit=no, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0" />        
+        
 	<title>Philly Art</title>
 
 	<style>
@@ -18,6 +18,15 @@
 	if (window.hyper && window.hyper.log) { console.log = hyper.log }
 	</script>
 
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    
 	<script src="cordova.js"></script>
 	<script src="libs/jquery/jquery.js"></script>
 	<script src="libs/evothings/evothings.js"></script>
@@ -26,7 +35,10 @@
 
 </head>
 
-<body>
+<body id="opening-page" style="background-image: url(ui/images/philadelphia-museum-of-art-east-steps2-900-600vp-587x0.jpg);
+           background-position: center center;
+           background-repeat: no-repeat;
+           background-size: cover;">  
 <!-- 
 	<header>
 		<button class="back" onclick="history.back()">
@@ -39,8 +51,10 @@
 <!-- 	</header> -->
 
 	<h1><center>Philly Art Museum<br>Hackaton</center></h1>
-	<p id="warning">Detects Galaxy "Locate App" beacon.
-	</p>
+    <br><br><center>
+    <a class="click-me" class="btn btn-default" role="button" href="mainpage.html">Let's do it</a>
+    </center>
+	<p id="warning">Detects Galaxy "Locate App" beacon.</p>
 	<ul id="found-beacons" class="dynamic"></ul>
 
 </body>

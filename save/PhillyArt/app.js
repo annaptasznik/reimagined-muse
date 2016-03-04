@@ -6,9 +6,8 @@ var app = (function()
 	// Specify your beacon 128bit UUIDs here.
 	var regions =
 	[
+        {uuid:'2F234454-CF6D-4A0F-ADF2-F4911BA9FFA6'},
 		// Estimote Beacon factory UUID.
-		{uuid:'2F234454-CF6D-4A0F-ADF2-F4911BA9FFA6'},
-		{uuid:'2F234454-CF6D-4A0F-ADF2-F4911BA9FFA7'},
 		{uuid:'B9407F30-F5F8-466E-AFF9-25556B57FE6D'},
 		// Sample UUIDs for beacons in our lab.
 		{uuid:'F7826DA6-4FA2-4E98-8024-BC5B71E0893E'},
@@ -25,6 +24,27 @@ var app = (function()
 	// Timer that displays list of beacons.
 	var updateTimer = null;
 
+    app.ui.onShowArtwork = function()
+    {
+        app.startScan(app.ui.deviceFound);
+        app.ui.displayStatus('Artworks');
+        app.ui.updateTimer = setInterval(app.ui.displayDeviceList, 500);
+    };   
+    
+    app.ui.onTrivia = function()
+    {
+        app.startScan(app.ui.deviceFound);
+        app.ui.displayStatus('Trivia');
+        app.ui.updateTimer = setInterval(app.ui.displayDeviceList, 500);
+    };       
+    
+    app.ui.onArtgram = function()
+    {
+        app.startScan(app.ui.deviceFound);
+        app.ui.displayStatus('ArtGram');
+        app.ui.updateTimer = setInterval(app.ui.displayDeviceList, 500);
+    };   
+    
 	app.initialize = function()
 	{
 		document.addEventListener(
@@ -39,7 +59,7 @@ var app = (function()
 		window.locationManager = cordova.plugins.locationManager;
 
 		// Start tracking beacons!
-		// startScan();
+		startScan();
 
 		// Display refresh timer.
 		updateTimer = setInterval(displayBeaconList, 500);
@@ -89,26 +109,34 @@ var app = (function()
 		// Start monitoring and ranging beacons.
 		for (var i in regions)
 		{
-			var beaconRegion = new locationManager.BeaconRegion(i + 1, regions[i].uuid);
+			var beaconRegion = new locationManager.BeaconRegion(
+				i + 1,
+				regions[i].uuid);
 
 			// Start ranging.
-			locationManager.startRangingBeaconsInRegion(beaconRegion).fail(console.error).done();
+			locationManager.startRangingBeaconsInRegion(beaconRegion)
+				.fail(console.error)
+				.done();
 
 			// Start monitoring.
 			// (Not used in this example, included as a reference.)
-			locationManager.startMonitoringForRegion(beaconRegion).fail(console.error).done();
+			locationManager.startMonitoringForRegion(beaconRegion)
+				.fail(console.error)
+				.done();
 		}
 	}
 
 	function displayBeaconList()
 	{
 		// Clear beacon list.
-        var bodyId = document.body.id;
-        var warningMsg=document.getElementById("warning")
-        if (bodyId == "opening-page") { warningMsg.innerHTML="opening page";} 
-        else {warningMsg.remove(); }
-        
+        $('#warning').remove();
 		$('#found-beacons').empty();
+				// Create tag to display beacon data.
+	    var element1 = $('<li> <H1> Detected beacons </H1> </li>');
+        $('#found-beacons').append(element1);
+        
+/*         $('#warning').remove();
+        $('#found-beacons').append(element1); */
 
 		var timeNow = Date.now();
 
