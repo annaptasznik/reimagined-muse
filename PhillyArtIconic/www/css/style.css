@@ -1,1 +1,8 @@
-/* Empty. Add your own CSS if you like */
+.home_screen_bg {
+  background-image: url("../img/philadelphia-museum-of-art-east-steps2-900-600vp-587x0.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+                                   
