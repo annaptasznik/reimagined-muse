@@ -1,0 +1,24 @@
+ <side-menus>
+        <!-- Center content -->
+        <pane side-menu-content>
+            <header class="bar bar-header bar-dark">
+                <h1 class="title">My App</h1>
+            </header>
+            <content has-header="true">
+                <!-- our list and list items -->
+                <list>
+                <item ng-repeat="task in tasks">
+                    {{task.title}}
+                </item>
+                </list>
+            </content>
+        </pane>
+
+        <!-- Left menu -->
+        <side-menu side="left">
+            <header class="bar bar-header bar-dark">
+                <h1 class="title">Projects</h1>
+            </header>
+        </side-menu>
+    </side-menus>
+    <nav-view></nav-view>

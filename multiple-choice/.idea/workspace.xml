@@ -1,0 +1,782 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="43191509-b67a-4623-ab3d-fc62b8e3bf3d" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/org.apache.cordova.statusbar/.fetch.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/org.apache.cordova.statusbar/src/ios/CDVStatusBar.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/org.apache.cordova.statusbar/src/ios/CDVStatusBar.m" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/org.apache.cordova.statusbar/README.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/platforms/ios/cordova/build" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/org.apache.cordova.statusbar/package.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/org.apache.cordova.statusbar/plugin.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/platforms/ios/www/plugins/org.apache.cordova.statusbar/www/statusbar.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/org.apache.cordova.statusbar/www/statusbar.js" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/ios/CordovaLib/CordovaLib.xcodeproj/xcuserdata/russellwenban.xcuserdatad/xcschemes/CordovaLib.xcscheme" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/ios/CordovaLib/CordovaLib.xcodeproj/xcuserdata/russellwenban.xcuserdatad/xcschemes/xcschememanagement.plist" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/ios/MultipleChoice.xcodeproj/project.xcworkspace/xcuserdata/russellwenban.xcuserdatad/UserInterfaceState.xcuserstate" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/ios/MultipleChoice.xcodeproj/xcuserdata/russellwenban.xcuserdatad/xcschemes/MultipleChoice.xcscheme" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/ios/MultipleChoice.xcodeproj/xcuserdata/russellwenban.xcuserdatad/xcschemes/xcschememanagement.plist" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/ios/MultipleChoice/Plugins/org.apache.cordova.device/CDVDevice.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/ios/MultipleChoice/Plugins/org.apache.cordova.device/CDVDevice.m" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/ios/cordova/console.log" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/ios/MultipleChoice/Resources/splash/Default-Landscape@2x~ipad.png" afterPath="$PROJECT_DIR$/platforms/ios/MultipleChoice/Resources/splash/Default-Landscape@2x~ipad.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/ios/MultipleChoice/Resources/splash/Default-Landscape~ipad.png" afterPath="$PROJECT_DIR$/platforms/ios/MultipleChoice/Resources/splash/Default-Landscape~ipad.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/ios/MultipleChoice/Resources/splash/Default-Portrait@2x~ipad.png" afterPath="$PROJECT_DIR$/platforms/ios/MultipleChoice/Resources/splash/Default-Portrait@2x~ipad.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/ios/MultipleChoice/Resources/splash/Default-Portrait~ipad.png" afterPath="$PROJECT_DIR$/platforms/ios/MultipleChoice/Resources/splash/Default-Portrait~ipad.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/ios/MultipleChoice.xcodeproj/project.xcworkspace/xcuserdata/factornine.xcuserdatad/UserInterfaceState.xcuserstate" afterPath="$PROJECT_DIR$/platforms/ios/MultipleChoice.xcodeproj/project.xcworkspace/xcuserdata/factornine.xcuserdatad/UserInterfaceState.xcuserstate" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plugins/org.apache.cordova.device/.fetch.json" afterPath="$PROJECT_DIR$/plugins/org.apache.cordova.device/.fetch.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/ios/.gitignore" afterPath="$PROJECT_DIR$/platforms/ios/.gitignore" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/ios/MultipleChoice/.gitignore" afterPath="$PROJECT_DIR$/platforms/ios/MultipleChoice/.gitignore" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/ios/CordovaLib/Classes/CDVAvailability.h" afterPath="$PROJECT_DIR$/platforms/ios/CordovaLib/Classes/CDVAvailability.h" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/ios/CordovaLib/Classes/CDVCommandDelegateImpl.h" afterPath="$PROJECT_DIR$/platforms/ios/CordovaLib/Classes/CDVCommandDelegateImpl.h" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/ios/CordovaLib/Classes/CDVCommandDelegateImpl.m" afterPath="$PROJECT_DIR$/platforms/ios/CordovaLib/Classes/CDVCommandDelegateImpl.m" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/ios/CordovaLib/Classes/CDVCommandQueue.h" afterPath="$PROJECT_DIR$/platforms/ios/CordovaLib/Classes/CDVCommandQueue.h" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/ios/CordovaLib/Classes/CDVCommandQueue.m" afterPath="$PROJECT_DIR$/platforms/ios/CordovaLib/Classes/CDVCommandQueue.m" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/ios/CordovaLib/Classes/CDVJSON.m" afterPath="$PROJECT_DIR$/platforms/ios/CordovaLib/Classes/CDVJSON.m" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/ios/CordovaLib/Classes/CDVURLProtocol.m" afterPath="$PROJECT_DIR$/platforms/ios/CordovaLib/Classes/CDVURLProtocol.m" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/ios/CordovaLib/Classes/CDVUserAgentUtil.m" afterPath="$PROJECT_DIR$/platforms/ios/CordovaLib/Classes/CDVUserAgentUtil.m" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/ios/CordovaLib/Classes/CDVViewController.m" afterPath="$PROJECT_DIR$/platforms/ios/CordovaLib/Classes/CDVViewController.m" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/ios/CordovaLib/Classes/CDVWebViewDelegate.m" afterPath="$PROJECT_DIR$/platforms/ios/CordovaLib/Classes/CDVWebViewDelegate.m" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/ios/CordovaLib/Classes/CDVWhitelist.m" afterPath="$PROJECT_DIR$/platforms/ios/CordovaLib/Classes/CDVWhitelist.m" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/ios/CordovaLib/CordovaLib.xcodeproj/xcuserdata/factornine.xcuserdatad/xcschemes/CordovaLib.xcscheme" afterPath="$PROJECT_DIR$/platforms/ios/CordovaLib/CordovaLib.xcodeproj/xcuserdata/factornine.xcuserdatad/xcschemes/CordovaLib.xcscheme" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/ios/MultipleChoice/Resources/de.lproj/Localizable.strings" afterPath="$PROJECT_DIR$/platforms/ios/MultipleChoice/Resources/de.lproj/Localizable.strings" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/ios/MultipleChoice/Resources/en.lproj/Localizable.strings" afterPath="$PROJECT_DIR$/platforms/ios/MultipleChoice/Resources/en.lproj/Localizable.strings" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/ios/MultipleChoice/Resources/es.lproj/Localizable.strings" afterPath="$PROJECT_DIR$/platforms/ios/MultipleChoice/Resources/es.lproj/Localizable.strings" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/ios/MultipleChoice/Resources/se.lproj/Localizable.strings" afterPath="$PROJECT_DIR$/platforms/ios/MultipleChoice/Resources/se.lproj/Localizable.strings" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/ios/MultipleChoice.xcodeproj/project.xcworkspace/xcshareddata/MultipleChoice.xccheckout" afterPath="$PROJECT_DIR$/platforms/ios/MultipleChoice.xcodeproj/project.xcworkspace/xcshareddata/MultipleChoice.xccheckout" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/ios/MultipleChoice.xcodeproj/xcuserdata/factornine.xcuserdatad/xcschemes/MultipleChoice.xcscheme" afterPath="$PROJECT_DIR$/platforms/ios/MultipleChoice.xcodeproj/xcuserdata/factornine.xcuserdatad/xcschemes/MultipleChoice.xcscheme" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/ios/MultipleChoice/Plugins/README" afterPath="$PROJECT_DIR$/platforms/ios/MultipleChoice/Plugins/README" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/ios/CordovaLib/VERSION" afterPath="$PROJECT_DIR$/platforms/ios/CordovaLib/VERSION" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/giac/.temp/app.concat.js" afterPath="$PROJECT_DIR$/giac/.temp/app.concat.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/ios/www/js/app.min.js" afterPath="$PROJECT_DIR$/platforms/ios/www/js/app.min.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/js/app.min.js" afterPath="$PROJECT_DIR$/www/js/app.min.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/giac/.temp/app.ngmin.js" afterPath="$PROJECT_DIR$/giac/.temp/app.ngmin.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/ios/MultipleChoice/config.xml" afterPath="$PROJECT_DIR$/platforms/ios/MultipleChoice/config.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/giac/js/controllers.js" afterPath="$PROJECT_DIR$/giac/js/controllers.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/ios/cordova/lib/copy-www-build-step.sh" afterPath="$PROJECT_DIR$/platforms/ios/cordova/lib/copy-www-build-step.sh" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/ios/CordovaLib/cordova.js" afterPath="$PROJECT_DIR$/platforms/ios/CordovaLib/cordova.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/ios/platform_www/cordova.js" afterPath="$PROJECT_DIR$/platforms/ios/platform_www/cordova.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/ios/www/cordova.js" afterPath="$PROJECT_DIR$/platforms/ios/www/cordova.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/ios/www/cordova_plugins.js" afterPath="$PROJECT_DIR$/platforms/ios/www/cordova_plugins.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/ios/cordova/defaults.xml" afterPath="$PROJECT_DIR$/platforms/ios/cordova/defaults.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plugins/ios.json" afterPath="$PROJECT_DIR$/plugins/ios.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/giac/css/multiple-choice.css" afterPath="$PROJECT_DIR$/giac/css/multiple-choice.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/ios/www/css/multiple-choice.css" afterPath="$PROJECT_DIR$/platforms/ios/www/css/multiple-choice.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/css/multiple-choice.css" afterPath="$PROJECT_DIR$/www/css/multiple-choice.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/ios/CordovaLib/CordovaLib.xcodeproj/project.pbxproj" afterPath="$PROJECT_DIR$/platforms/ios/CordovaLib/CordovaLib.xcodeproj/project.pbxproj" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/ios/MultipleChoice.xcodeproj/project.pbxproj" afterPath="$PROJECT_DIR$/platforms/ios/MultipleChoice.xcodeproj/project.pbxproj" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/giac/templates/question.html" afterPath="$PROJECT_DIR$/giac/templates/question.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/templates/question.html" afterPath="$PROJECT_DIR$/www/templates/question.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/giac/js/services.js" afterPath="$PROJECT_DIR$/giac/js/services.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+    </list>
+    <ignored path="multiple-choice.iws" />
+    <ignored path=".idea/workspace.xml" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ChangesViewManager" flattened_view="true" show_ignored="false" />
+  <component name="CreatePatchCommitExecutor">
+    <option name="PATCH_PATH" value="" />
+  </component>
+  <component name="DaemonCodeAnalyzer">
+    <disable_hints />
+  </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
+  <component name="FavoritesManager">
+    <favorites_list name="multiple-choice" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf>
+      <file leaf-file-name="multiple-choice.css" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/giac/css/multiple-choice.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="7" column="49" selection-start="226" selection-end="226" vertical-scroll-proportion="-4.8076925" vertical-offset="50" max-vertical-offset="4125">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="services.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/giac/js/services.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="15" column="56" selection-start="765" selection-end="765" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1290">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="controllers.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/giac/js/controllers.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="10" column="95" selection-start="410" selection-end="410" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1455">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="question.html" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/giac/templates/question.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="5" column="37" selection-start="163" selection-end="163" vertical-scroll-proportion="0.13386881" vertical-offset="0" max-vertical-offset="940">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="app.css" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/giac/css/app.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="4849" column="3" selection-start="104207" selection-end="104207" vertical-scroll-proportion="-30.384615" vertical-offset="71945" max-vertical-offset="98295">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FindManager">
+    <FindUsagesManager>
+      <setting name="OPEN_NEW_TAB" value="false" />
+    </FindUsagesManager>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitLogSettings">
+    <option name="myDateState">
+      <MyDateState />
+    </option>
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="changedFiles">
+      <list>
+        <option value="$PROJECT_DIR$/test/failedTests/QuestionCtrlSpec.js" />
+        <option value="$PROJECT_DIR$/test/unit/controllerSpec.js" />
+        <option value="$PROJECT_DIR$/public/app/controllers.js" />
+        <option value="$PROJECT_DIR$/test/unit/QuestionCtrlSpec.js" />
+        <option value="$PROJECT_DIR$/test/unit/QuizCtrlSpec.js" />
+        <option value="$PROJECT_DIR$/test/unit/QuizServiceSpec.js" />
+        <option value="$PROJECT_DIR$/karma.conf.js" />
+        <option value="$PROJECT_DIR$/LICENSE" />
+        <option value="$PROJECT_DIR$/giac/templates/pictureModal.html" />
+        <option value="$PROJECT_DIR$/giac/index.html" />
+        <option value="$PROJECT_DIR$/www/templates/question.html" />
+        <option value="$PROJECT_DIR$/giac/css/app.css" />
+        <option value="$PROJECT_DIR$/README.md" />
+        <option value="$PROJECT_DIR$/giac/js/services.js" />
+        <option value="$PROJECT_DIR$/giac/css/multiple-choice.css" />
+        <option value="$PROJECT_DIR$/giac/js/controllers.js" />
+        <option value="$PROJECT_DIR$/giac/templates/question.html" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectFrameBounds">
+    <option name="width" value="1440" />
+    <option name="height" value="900" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <OptionsSetting value="true" id="Add" />
+    <OptionsSetting value="true" id="Remove" />
+    <OptionsSetting value="true" id="Checkout" />
+    <OptionsSetting value="true" id="Update" />
+    <OptionsSetting value="true" id="Status" />
+    <OptionsSetting value="true" id="Edit" />
+    <ConfirmationsSetting value="0" id="Add" />
+    <ConfirmationsSetting value="0" id="Remove" />
+  </component>
+  <component name="ProjectReloadState">
+    <option name="STATE" value="0" />
+  </component>
+  <component name="ProjectView">
+    <navigator currentView="ProjectPane" proportions="" version="1" splitterProportion="0.5">
+      <flattenPackages />
+      <showMembers />
+      <showModules />
+      <showLibraryContents />
+      <hideEmptyPackages />
+      <abbreviatePackageNames />
+      <autoscrollToSource />
+      <autoscrollFromSource />
+      <sortByType />
+    </navigator>
+    <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="multiple-choice" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="multiple-choice" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="multiple-choice" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="multiple-choice" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="multiple-choice" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="giac" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="multiple-choice" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="multiple-choice" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="giac" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="templates" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="multiple-choice" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="multiple-choice" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="giac" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="js" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="multiple-choice" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="multiple-choice" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="giac" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="css" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
+      <pane id="Scope" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="options.splitter.main.proportions" value="0.3" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="recentsLimit" value="5" />
+    <property name="options.lastSelected" value="settings.nodejs" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../simple-firebase" />
+    <property name="restartRequiresConfirmation" value="true" />
+    <property name="FullScreen" value="true" />
+    <property name="DefaultHtmlFileTemplate" value="Html5" />
+    <property name="options.searchVisible" value="true" />
+    <property name="options.splitter.details.proportions" value="0.2" />
+    <property name="LayoutCode.rearrangeEntriesJavaScript" value="false" />
+    <property name="LayoutCode.rearrangeEntriesCSS" value="false" />
+  </component>
+  <component name="RunManager" selected="Karma.karma.conf.js">
+    <configuration default="true" type="DartCommandLineRunConfigurationType" factoryName="Dart Command Line Application">
+      <option name="VMOptions" />
+      <option name="arguments" />
+      <option name="filePath" />
+      <option name="name" value="Dart" />
+      <option name="saveOutputToFile" value="false" />
+      <option name="showConsoleOnStdErr" value="false" />
+      <option name="showConsoleOnStdOut" value="false" />
+      <method />
+    </configuration>
+    <configuration default="true" type="DartUnitRunConfigurationType" factoryName="DartUnit">
+      <option name="VMOptions" />
+      <option name="arguments" />
+      <option name="filePath" />
+      <option name="scope" value="ALL" />
+      <option name="testName" />
+      <method />
+    </configuration>
+    <configuration default="true" type="JavaScriptTestRunnerKarma" factoryName="Karma" singleton="true" config-file="">
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="JSTestDriver:ConfigurationType" factoryName="JsTestDriver">
+      <setting name="configLocationType" value="CONFIG_FILE" />
+      <setting name="settingsFile" value="" />
+      <setting name="serverType" value="INTERNAL" />
+      <setting name="preferredDebugBrowser" value="CHROME" />
+      <method />
+    </configuration>
+    <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug" singleton="true">
+      <method />
+    </configuration>
+    <configuration default="true" type="NodeJSConfigurationType" factoryName="Node.js" working-dir="">
+      <browser start="false" url="" with-js-debugger="false" />
+      <method />
+    </configuration>
+    <configuration default="false" name="karma.conf.js" type="JavaScriptTestRunnerKarma" factoryName="Karma" singleton="true" config-file="$PROJECT_DIR$/karma.conf.js">
+      <envs />
+      <RunnerSettings RunnerId="KarmaCoverageProgramRunner" />
+      <RunnerSettings RunnerId="KarmaJavaScriptTestRunnerDebug" />
+      <RunnerSettings RunnerId="KarmaJavaScriptTestRunnerRun" />
+      <ConfigurationWrapper RunnerId="KarmaCoverageProgramRunner" />
+      <ConfigurationWrapper RunnerId="KarmaJavaScriptTestRunnerDebug" />
+      <ConfigurationWrapper RunnerId="KarmaJavaScriptTestRunnerRun" />
+      <method />
+    </configuration>
+    <list size="1">
+      <item index="0" class="java.lang.String" itemvalue="Karma.karma.conf.js" />
+    </list>
+  </component>
+  <component name="ShelveChangesManager" show_recycled="false" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="43191509-b67a-4623-ab3d-fc62b8e3bf3d" name="Default" comment="" />
+      <created>1392036418264</created>
+      <updated>1392036418264</updated>
+    </task>
+    <task id="LOCAL-00001" summary="#6: Documentation - The MIT License has been updated.">
+      <created>1392819631384</created>
+      <updated>1392819631384</updated>
+    </task>
+    <task id="LOCAL-00002" summary="#6: Documentation - The README doc has been improved.">
+      <created>1392819758192</created>
+      <updated>1392819758192</updated>
+    </task>
+    <task id="LOCAL-00003" summary="#6: Documentation - The README doc has been improved.">
+      <created>1392819814630</created>
+      <updated>1392819814630</updated>
+    </task>
+    <task id="LOCAL-00004" summary="#6: Documentation - The README doc has been improved.">
+      <created>1392820959687</created>
+      <updated>1392820959687</updated>
+    </task>
+    <task id="LOCAL-00005" summary="#6: Documentation - The README doc has been improved.">
+      <created>1392821077772</created>
+      <updated>1392821077772</updated>
+    </task>
+    <task id="LOCAL-00006" summary="#6: Documentation - The README doc has been improved.">
+      <created>1392821368313</created>
+      <updated>1392821368313</updated>
+    </task>
+    <task id="LOCAL-00007" summary="#6: Documentation - The README doc has been improved.">
+      <created>1392821681449</created>
+      <updated>1392821681449</updated>
+    </task>
+    <task id="LOCAL-00008" summary="#6: Documentation - The README doc has been improved.">
+      <created>1392821794400</created>
+      <updated>1392821794400</updated>
+    </task>
+    <task id="LOCAL-00009" summary="#6: Documentation - The README doc has been improved.">
+      <created>1392821957708</created>
+      <updated>1392821957708</updated>
+    </task>
+    <task id="LOCAL-00010" summary="#6: Documentation - The README doc has been improved with an image.">
+      <created>1392822057424</created>
+      <updated>1392822057424</updated>
+    </task>
+    <task id="LOCAL-00011" summary="#6: Documentation - The README doc has been improved..">
+      <created>1393324967006</created>
+      <updated>1393324967006</updated>
+    </task>
+    <task id="LOCAL-00012" summary="#6: Documentation - The README doc has been improved..">
+      <created>1393346255078</created>
+      <updated>1393346255078</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
+    <servers />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="0" y="0" width="1440" height="900" extended-state="0" />
+    <editor active="true" />
+    <layout>
+      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32925835" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25746268" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24939585" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.18957011" sideWeight="0.7416463" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.21597391" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24502487" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Mongo Runner" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Mongo Explorer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+    </layout>
+  </component>
+  <component name="Vcs.Log.UiProperties">
+    <option name="RECENTLY_FILTERED_USERS">
+      <collection />
+    </option>
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="myTodoPanelSettings">
+      <TodoPanelSettings />
+    </option>
+    <MESSAGE value="#6: Documentation - The MIT License has been updated." />
+    <MESSAGE value="#6: Documentation - The README doc has been improved." />
+    <MESSAGE value="#6: Documentation - The README doc has been improved with an image." />
+    <MESSAGE value="#6: Documentation - The README doc has been improved.." />
+    <option name="LAST_COMMIT_MESSAGE" value="#6: Documentation - The README doc has been improved.." />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <option name="time" value="2" />
+    </breakpoint-manager>
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/giac/templates/question.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="35" column="36" selection-start="1528" selection-end="1534" vertical-scroll-proportion="0.0" vertical-offset="525" max-vertical-offset="735">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/giac/css/multiple-choice.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="26" column="24" selection-start="631" selection-end="631" vertical-scroll-proportion="0.0" vertical-offset="390" max-vertical-offset="1245">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/unit/QuestionCtrlSpec.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="10" column="53" selection-start="187" selection-end="187" vertical-scroll-proportion="0.0" vertical-offset="150" max-vertical-offset="1215" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="134" column="4" selection-start="3509" selection-end="3509" vertical-scroll-proportion="0.0" vertical-offset="2010" max-vertical-offset="2490" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/giac/templates/question.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="35" column="36" selection-start="1528" selection-end="1534" vertical-scroll-proportion="0.0" vertical-offset="525" max-vertical-offset="735">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/giac/css/multiple-choice.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="26" column="24" selection-start="631" selection-end="631" vertical-scroll-proportion="0.0" vertical-offset="390" max-vertical-offset="1245">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/unit/QuestionCtrlSpec.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="10" column="53" selection-start="187" selection-end="187" vertical-scroll-proportion="0.0" vertical-offset="150" max-vertical-offset="1215" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="134" column="4" selection-start="3509" selection-end="3509" vertical-scroll-proportion="0.0" vertical-offset="2010" max-vertical-offset="2490" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/giac/templates/question.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="35" column="36" selection-start="1528" selection-end="1534" vertical-scroll-proportion="0.0" vertical-offset="525" max-vertical-offset="735">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/giac/css/multiple-choice.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="26" column="24" selection-start="631" selection-end="631" vertical-scroll-proportion="0.0" vertical-offset="390" max-vertical-offset="1245">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/unit/QuestionCtrlSpec.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="10" column="53" selection-start="187" selection-end="187" vertical-scroll-proportion="0.0" vertical-offset="150" max-vertical-offset="1215" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="134" column="4" selection-start="3509" selection-end="3509" vertical-scroll-proportion="0.0" vertical-offset="2010" max-vertical-offset="2490" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/giac/templates/question.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="35" column="36" selection-start="1528" selection-end="1534" vertical-scroll-proportion="0.0" vertical-offset="525" max-vertical-offset="735">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/giac/css/multiple-choice.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="26" column="24" selection-start="631" selection-end="631" vertical-scroll-proportion="0.0" vertical-offset="390" max-vertical-offset="1245">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/unit/QuestionCtrlSpec.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="10" column="53" selection-start="187" selection-end="187" vertical-scroll-proportion="0.0" vertical-offset="150" max-vertical-offset="1215" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="134" column="4" selection-start="3509" selection-end="3509" vertical-scroll-proportion="0.0" vertical-offset="1322" max-vertical-offset="2490" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/giac/templates/question.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="14" column="22" selection-start="627" selection-end="627" vertical-scroll-proportion="0.0" vertical-offset="210" max-vertical-offset="735">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/giac/css/multiple-choice.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="26" column="24" selection-start="631" selection-end="631" vertical-scroll-proportion="0.0" vertical-offset="390" max-vertical-offset="1245">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/unit/QuestionCtrlSpec.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="10" column="53" selection-start="187" selection-end="187" vertical-scroll-proportion="0.0" vertical-offset="150" max-vertical-offset="1215" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="134" column="4" selection-start="3509" selection-end="3509" vertical-scroll-proportion="0.0" vertical-offset="1322" max-vertical-offset="2490" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/giac/templates/question.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="14" column="22" selection-start="627" selection-end="627" vertical-scroll-proportion="0.0" vertical-offset="210" max-vertical-offset="735">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/giac/css/multiple-choice.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="26" column="24" selection-start="631" selection-end="631" vertical-scroll-proportion="0.0" vertical-offset="390" max-vertical-offset="1245">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/unit/QuestionCtrlSpec.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="10" column="53" selection-start="187" selection-end="187" vertical-scroll-proportion="0.0" vertical-offset="150" max-vertical-offset="1215" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="106" column="3" selection-start="2640" selection-end="2640" vertical-scroll-proportion="0.0" vertical-offset="1590" max-vertical-offset="2490" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/giac/templates/question.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="14" column="22" selection-start="627" selection-end="627" vertical-scroll-proportion="0.0" vertical-offset="210" max-vertical-offset="735">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/giac/css/multiple-choice.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="26" column="24" selection-start="631" selection-end="631" vertical-scroll-proportion="0.0" vertical-offset="390" max-vertical-offset="1245">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/unit/QuestionCtrlSpec.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="10" column="53" selection-start="187" selection-end="187" vertical-scroll-proportion="0.0" vertical-offset="150" max-vertical-offset="1215" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="106" column="3" selection-start="2640" selection-end="2640" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2490" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/giac/templates/question.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="14" column="22" selection-start="627" selection-end="627" vertical-scroll-proportion="0.0" vertical-offset="210" max-vertical-offset="735">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/giac/css/multiple-choice.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="26" column="24" selection-start="631" selection-end="631" vertical-scroll-proportion="0.0" vertical-offset="390" max-vertical-offset="1245">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/karma.conf.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="11" column="32" selection-start="289" selection-end="289" vertical-scroll-proportion="-0.23708206" vertical-offset="494" max-vertical-offset="2106" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bower_components/ionic/release/js/ionic-angular.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="418" column="0" selection-start="12146" selection-end="12146" vertical-scroll-proportion="0.22485207" vertical-offset="5088" max-vertical-offset="45773" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/giac/templates/about.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1116" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/giac/templates/results.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="11" column="55" selection-start="494" selection-end="500" vertical-scroll-proportion="-13.619047" vertical-offset="0" max-vertical-offset="546" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/giac/templates/pictureModal.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="10" selection-start="10" selection-end="10" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1053" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/giac/js/lib/angular/angular.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="77" column="11" selection-start="2776" selection-end="2776" vertical-scroll-proportion="0.6236749" vertical-offset="802" max-vertical-offset="309000" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/unit/QuestionCtrlSpec.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="10" column="53" selection-start="187" selection-end="187" vertical-scroll-proportion="0.019329896" vertical-offset="135" max-vertical-offset="1215" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/giac/js/lib/ionic-angular.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="2766" column="18" selection-start="83120" selection-end="83126" vertical-scroll-proportion="0.9230769" vertical-offset="38164" max-vertical-offset="49448" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/giac/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="51" column="100" selection-start="2175" selection-end="2184" vertical-scroll-proportion="1.4776119" vertical-offset="480" max-vertical-offset="1872" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/giac/templates/tabs.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="752" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/giac/config.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="776">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Gruntfile.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="101" column="43" selection-start="3294" selection-end="3294" vertical-scroll-proportion="1.0" vertical-offset="739" max-vertical-offset="1875" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Test Results - karma_conf_js.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="12090" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/giac/templates/home.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="14" selection-start="14" selection-end="14" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="569">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider editor-type-id="MarkdownPreviewEditor">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="113" column="2" selection-start="2700" selection-end="2700" vertical-scroll-proportion="0.017574692" vertical-offset="1120" max-vertical-offset="1900">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/giac/js/app.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="37" column="17" selection-start="1424" selection-end="1424" vertical-scroll-proportion="0.04042179" vertical-offset="851" max-vertical-offset="1794">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/giac/js/services.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="15" column="56" selection-start="765" selection-end="765" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1290">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/giac/js/controllers.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="10" column="95" selection-start="410" selection-end="410" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1455">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/giac/css/app.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="4849" column="3" selection-start="104207" selection-end="104207" vertical-scroll-proportion="-30.384615" vertical-offset="71945" max-vertical-offset="98295">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/giac/css/multiple-choice.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="7" column="49" selection-start="226" selection-end="226" vertical-scroll-proportion="-4.8076925" vertical-offset="50" max-vertical-offset="4125">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/giac/templates/question.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="5" column="37" selection-start="163" selection-end="163" vertical-scroll-proportion="0.13386881" vertical-offset="0" max-vertical-offset="940">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>
+

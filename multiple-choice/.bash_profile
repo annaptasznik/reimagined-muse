@@ -1,0 +1,1 @@
+. /sw/bin/init.sh

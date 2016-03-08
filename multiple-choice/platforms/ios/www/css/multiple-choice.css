@@ -1,0 +1,154 @@
+body {
+    /*cursor: url('http://ionicframework.com/img/finger.png'), auto;*/
+}
+
+.item-complex .item-content {
+    padding: 5px 40px 15px 5px;
+}
+
+.view {
+
+}
+
+/* TODO Modify from here */
+.item-radio {
+    height: 100%;
+    /*border: 1px solid #8bAA00;*/
+    /*padding: 0;*/
+}
+
+.item { }
+
+.item-radio p {
+    /*color: #223355;*/
+    font-weight: 400;
+    font-size: 1.25em; /* based that 1em == 10px */
+    line-height: 1.25em; /* 16.9px line-height */
+
+}
+
+.item-radio input {
+    /* hide any radio button inputs elements (the ugly circles) */
+    position: absolute;
+    left: -9999px;
+}
+
+.item-radio input:checked ~ .item-content {
+    /* style the item content when its checked */
+    background: #f7f7f7;
+}
+
+.item-radio input:checked ~ .radio-icon {
+    /* show the checkmark icon when its checked */
+    visibility: hidden;
+}
+
+.check-element {
+    padding: 10px;
+    border: 1px solid black;
+    background: white;
+}
+
+.question-text-divider {
+    /*min-height: 40px;*/
+    /*margin-top: 0;*/
+    /*margin-bottom: 10px;*/
+    /*padding-top: 5px;*/
+    /*padding-bottom: 5px;*/
+
+}
+
+.card {
+    /*border-style: solid;*/
+    /*border-color: #14095d;*/
+}
+
+.container {
+    /*border: dashed blue 1px;*/
+    vertical-align: middle;
+}
+
+/* Large desktops and laptops */
+@media (min-width: 1200px) {
+    .item-image {
+        width: auto;
+        vertical-align: middle;
+        max-height: 500px;
+    }
+
+    .view {
+
+    }
+}
+
+/* Portrait tablets and medium desktops */
+@media (min-width: 992px) and (max-width: 1199px) {
+
+    .view {
+
+    }
+
+}
+
+/* Portrait tablets and small desktops */
+@media (min-width: 768px) and (max-width: 991px) {
+
+}
+
+/* Landscape phones and portrait tablets */
+@media (max-width: 767px) {
+
+}
+
+/* Landscape phones and smaller */
+@media (max-width: 480px) {
+
+}
+
+/* iPhone 2G, 3G, 4, 4S Media Queries */
+
+/* iPhone 2G-4S in portrait & landscape */
+@media only screen
+and (min-device-width: 320px)
+and (max-device-width: 480px) {
+    .question-text-divider {
+        min-height: 40px;
+        margin-top: 0;
+        margin-bottom: 10px;
+        padding-top: 5px;
+        padding-bottom: 5px;
+
+    }
+    .item-radio {
+        height: 100%;
+        /*border: 1px solid #8bAA00;*/
+        padding: 0;
+    }
+
+    .item {
+        /*border: 1px solid #FFAA00;*/
+        padding: 0;
+
+    }
+
+    .item-radio p {
+        /*color: #223355;*/
+        font-weight: 500;
+        font-size: 1.25em; /* based that 1em == 10px */
+        line-height: 1.25em; /* 16.9px line-height */
+        border: 1px solid #000000;
+        padding: 0;
+        margin-top: -5px;
+        margin-bottom: -10px;
+
+    }
+
+}
+
+/* iPhone 2G-4S in landscape */
+@media only screen
+and (min-device-width : 320px)
+and (max-device-width : 480px)
+and (orientation : landscape) {
+
+}

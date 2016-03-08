@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>A7EEDAA4-CE3F-4663-B4A7-25E0639C9623</string>
+	<key>IDESourceControlProjectName</key>
+	<string>MultipleChoice</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>CADF18A9-7C0D-46DB-A0EF-4D0AC15DB9F0</key>
+		<string>https://bitbucket.org/rwenban/multiple-choice.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>platforms/ios/MultipleChoice.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>CADF18A9-7C0D-46DB-A0EF-4D0AC15DB9F0</key>
+		<string>../../../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://bitbucket.org/rwenban/multiple-choice.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>CADF18A9-7C0D-46DB-A0EF-4D0AC15DB9F0</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>CADF18A9-7C0D-46DB-A0EF-4D0AC15DB9F0</string>
+			<key>IDESourceControlWCCName</key>
+			<string>multiple-choice</string>
+		</dict>
+	</array>
+</dict>
+</plist>

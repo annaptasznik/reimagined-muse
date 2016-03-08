@@ -1,0 +1,40 @@
+<view title="'Question'">
+    <content has-header="true" has-tabs="false">
+        <div class="list card">
+
+            <div>
+                <!-- THE QUESTION -->
+                <a class="item item-text-wrap item-icon-right divider" ng-click="openModal()">
+                    <i class="icon ion-image"></i>
+                    <h3> {{ question.text }} </h3>
+                </a>
+
+                <!--THE RADIO BUTTONS-->
+                <radio ng-repeat="option in question.options"
+                       ng-value="option.id"
+                       ng-model="$parent.currentOption"
+                       ng-change="optionSelected(option)">
+                    <p>{{ option.text }}</p>
+                </radio>
+            </div>
+
+            <!-- DIVIDE THE QUESTIONS AND THE BUTTONS -->
+            <!-- THERE'S NOT ENOUGH ROOM FOR THE SHORTER iPHONE -->
+            <!--<div class="item item-divider item-light" >-->
+            <!--</div>-->
+
+            <!-- THE BOTTOM MENU BUTTONS -->
+            <div class="item item-divider ">
+                <!--||question.id==numberOfQuestions-1-->
+                <div class="button-bar">
+                    <a class="button button-positive" ng-hide="question.id==0"
+                       ion-chevron-left href="#/tab/question/{{question.id-1}}">PREVIOUS</a>
+                    <a class="button button-positive" ng-hide="question.id==numberOfQuestions-1" ion-chevron-right
+                       href="#/tab/question/{{question.id+1}}">NEXT</a>
+                    <a class="button button-positive" ng-show="question.id>=numberOfQuestions-1" ion-chevron-right
+                       href="#/tab/results">COMPLETE</a>
+                </div>
+            </div>
+        </div>
+    </content>
+</view>
