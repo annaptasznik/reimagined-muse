@@ -35,4 +35,63 @@ angular.module('starter.controllers', [])
   $scope.settings = {
     enableFriends: true
   };
-});
+})
+
+.controller("ctlTest", function ($scope, Friends) {
+			$scope.myFriends = Friends.all()
+		}
+	)
+    
+.controller("QuizCtrl", function ($scope, QuizService) {
+			$scope.questions = QuizService.all()
+		}
+	)
+
+.controller("QuestionCtrl", ["$scope", "$log", "$stateParams", "$ionicModal", "QuizService",
+		function ($scope, $log, $stateParams, $ionicModal, QuizService) {
+			$scope.test = "test",
+			$scope.question = QuizService.get($stateParams.questionId),
+			$scope.numberOfQuestions = QuizService.all().length,
+			$scope.modal,
+			$scope.currentOption = -1,
+			$scope.optionSelected =
+			function ($ionicModal) {
+				$log.info("item: ", $ionicModal.id);
+				var f = $scope.question.options[$ionicModal.id].answer;
+				$log.info("correct answer : " + f),
+				QuizService.mark($stateParams.questionId, f)
+			},
+
+			$ionicModal.fromTemplateUrl("modal.html",
+				function (c) {
+				$scope.info("setting up the modal window!"),
+				$scope.modal = $stateParams
+			}, {
+				scope : $scope,
+				animation : "slide-in-up"
+			}),
+
+			$scope.openModal = function () {
+				$log.info("open the bloody window! || ", $scope.modal),
+				$scope.title = $scope.question.title,
+				$scope.text = $scope.question.text,
+				$scope.image = $scope.question.image,
+				$scope.modal.show()
+			},
+
+			$scope.$on("$destroy", function () {
+				$scope.modal.remove()
+			})
+		}
+	])
+
+.controller("ResultsCtrl", ["$scope", "$log", "$stateParams", "$state", "QuizService", function ($scope, $log, $stateParams, $state, QuizService) {
+			$scope.numberOfQuestions = QuizService.all().length,
+			$scope.numberOfCorrectAnswers = QuizService.getNumberOfCorrectAnswers(),
+			$scope.reset = function () {
+				QuizService.reset(),
+				$state.transitionTo("ta$log.questions")
+			}
+		}
+	])
+;

@@ -93,4 +93,125 @@ angular.module('starter.services', [])
       return friends[friendId];
     }
   }
+})
+
+.factory("QuizService", function () {
+	var Qdb = [{
+			id : 0,
+			title : "The Tudors",
+			text : "Do you know how many wives did HenryVIII have?",
+			correct : false,
+			image : "henryviii.png",
+			options : [{
+					id : 0,
+					text : "1",
+					answer : false
+				}, {
+					id : 1,
+					text : "3",
+					answer : false
+				}, {
+					id : 2,
+					text : "6",
+					answer : true
+				}, {
+					id : 3,
+					text : "13",
+					answer : false
+				}
+			]
+		}, {
+			id : 1,
+			title : "The Romans",
+			text : "Which Roman Emperor built a massive wall across Northern Britain in 122 A.D.?",
+			correct : false,
+			image : "hadrianswall.png",
+			options : [{
+					id : 0,
+					text : "Marcus Aurelius",
+					answer : false
+				}, {
+					id : 1,
+					text : "Hadrian",
+					answer : true
+				}, {
+					id : 2,
+					text : "Nero",
+					answer : false
+				}, {
+					id : 3,
+					text : "Augustus",
+					answer : false
+				}
+			]
+		}, {
+			id : 2,
+			title : "The Elizabethans",
+			text : "In 1594 William Shakespeare joined the company of this London theatre.",
+			correct : false,
+			image : "globe.png",
+			options : [{
+					id : 0,
+					text : "Broadway",
+					answer : false
+				}, {
+					id : 1,
+					text : "Oxford University Theatre",
+					answer : false
+				}, {
+					id : 2,
+					text : "The Globe",
+					answer : true
+				}, {
+					id : 3,
+					text : "The London Palladium",
+					answer : false
+				}
+			]
+		}, {
+			id : 3,
+			title : "The Renaissance",
+			text : "The first successful printing press was developed by this man.",
+			correct : false,
+			image : "gutenberg.png",
+			options : [{
+					id : 0,
+					text : "Johannes Gutenburg",
+					answer : true
+				}, {
+					id : 1,
+					text : "Benjamin Franklin",
+					answer : false
+				}, {
+					id : 2,
+					text : "Sir Isaac Newton",
+					answer : false
+				}, {
+					id : 3,
+					text : "Martin Luther",
+					answer : false
+				}
+			]
+		}
+	];
+	return {
+		all : function () {
+			return Qdb
+		},
+		get : function (index) {
+			return Qdb[index]
+		},
+		mark : function (index, c) {
+			Qdb[index].correct = c
+		},
+		getNumberOfCorrectAnswers : function () {
+			for (var b, c = 0, i = 0; i < Qdb.length; i++)
+				b = Qdb[i], b.correct && c++;
+			return c
+		},
+		reset : function () {
+			for (var i = 0; i < Qdb.length; i++)
+				Qdb[i].correct = false
+		}
+	}
 });
