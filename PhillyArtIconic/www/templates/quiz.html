@@ -1,33 +1,22 @@
-<ion-view view-title="Quiz-Friends">
-  <ion-content>
-      <ion-list>
-      <ion-item class="item-avatar" ng-repeat="friend in friends" type="item-text-wrap" href="#/tab/friend/{{friend.id}}">
-        <img ng-src="{{friend.face}}">
-        <h2>{{friend.name}}</h2>
-      </ion-item>
-    </ion-list>
-  </ion-content>
-</ion-view>
-
-<!-- <ion-view view-title="The Quiz">
-    <ion-content has-header="true" has-tabs="true">
+<ion-view  view-title="Quiz">
+    <ion-content>
         <div class="card"><br>
             <div class="item item-divider">
-                <h3>History Quiz</h3>
+                <h3>Artwork Fun</h3>
             </div>
             <div class="item item-text-wrap">
                 <p>Complete the simple multiple choice questions and see the result.</p>
             </div>
 
              <ion-list>
-                    <ion-item class="item-avatar" ng-repeat="friend in friends" type="item-text-wrap">
-                        <h2>{{friend.name}}</h2>
+                    <ion-item class="item-avatar" ng-repeat="for Q in questions" type="item-text-wrap">
+                        <h2>{{Q.text}}</h2>
                     </ion-item>
-              </ion-list>
+             </ion-list>
             
             <div class="item item-divider">
                 <p class="text-center"><a class="button button-positive center" href="#/tab/question/0">START</a></p>
             </div>
         </div>
     </ion-content>
-</ion-view> -->
+</ion-view>

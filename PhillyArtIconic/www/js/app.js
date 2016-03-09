@@ -41,10 +41,9 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services'])
 	.state('tab.friend-detail',{url:'/friend/:friendId',views:{'tab-friends':{templateUrl:'templates/friend-detail.html',controller:'FriendDetailCtrl'}}})
 	.state('tab.account', {url:'/account',	views : {'tab-account' : {templateUrl : 'templates/tab-account.html',controller : 'AccountCtrl'}}})
     
-  /*   .state('tab.questions',{url:'/questions',                views:{'tab-quiz':{templateUrl:'templates/quiz.html',      controller:'FriendsCtrl'       }}}) */
-	.state('tab.questions',{url:'/questions',                views:{'tab-quiz':{templateUrl:'templates/tab-friends.html',controller:'FriendsCtrl'	}}	})
-/* 	.state('tab.question', {url:'/question/:questionId',views:{'tab-quiz':{templateUrl:'templates/question.html',controller:'QuestionCtrl'}}})
-	.state('tab.results',    {url:'/results',	                  views:{'tab-quiz':{templateUrl:'templates/results.html',  controller:'ResultsCtrl'  }}})  */
+     .state('tab.questions',{url:'/questions',                views:{'tab-quiz':{templateUrl:'templates/quiz.html',      controller:'QuizService'}}}) 
+    .state('tab.question', {url:'/question/:questionId',views:{'tab-quiz':{templateUrl:'templates/question.html',controller:'QuestionCtrl'}}})
+	.state('tab.results',    {url:'/results',	                  views:{'tab-quiz':{templateUrl:'templates/results.html',  controller:'ResultsCtrl'  }}}) 
     ;
 
 	// if none of the above states are matched, use this as the fallback

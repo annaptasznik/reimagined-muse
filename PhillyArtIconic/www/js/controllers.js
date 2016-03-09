@@ -37,11 +37,6 @@ angular.module('starter.controllers', [])
   };
 })
 
-.controller("ctlTest", function ($scope, Friends) {
-			$scope.myFriends = Friends.all()
-		}
-	)
-    
 .controller("QuizCtrl", function ($scope, QuizService) {
 			$scope.questions = QuizService.all()
 		}
