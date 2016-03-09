@@ -10,12 +10,14 @@
                 </a>
 
                 <!--THE RADIO BUTTONS-->
-                <radio ng-repeat="option in question.options"
-                       ng-value="option.id"
-                       ng-model="$parent.currentOption"
-                       ng-change="optionSelected(option)">
-                    <p>{{ option.text }}</p>
-                </radio>
+                <ion-radio ng-repeat="option in question.options"
+                    ng-value="option.id"
+                    ng-model="$parent.currentOption"
+                    ng-change="optionSelected(option)">
+                    {{option.text}}
+                </ion-radio>
+
+                
             </div>
 
             <!-- DIVIDE THE QUESTIONS AND THE BUTTONS -->

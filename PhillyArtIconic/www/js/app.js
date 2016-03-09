@@ -34,16 +34,16 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services'])
 	.state('tab.home' ,        {url:'/home', views : {'tab-home' : {templateUrl : 'templates/tab-home.html',  controller: 'DashCtrl'}}})
 	.state('tab.dash'  ,        {url:'/dash',	views : {'tab-dash'  : {templateUrl : 'templates/tab-dash.html',	 controller: 'DashCtrl'}}})
 	.state('tab.chats' ,        {url:'/chats',	views : {'tab-chats' : {templateUrl : 'templates/tab-chats.html',  controller: 'ChatsCtrl'}}})
-    
+
 	.state('tab.chat-detail', {url:'/chats/:chatId',views : {'tab-chats' : {templateUrl : 'templates/chat-detail.html',controller : 'ChatDetailCtrl'}}})
 	.state('tab.friends',      {url:'/friends',views : {'tab-friends' : {templateUrl : 'templates/tab-friends.html',controller : 'FriendsCtrl'	}}	})
 
 	.state('tab.friend-detail',{url:'/friend/:friendId',views:{'tab-friends':{templateUrl:'templates/friend-detail.html',controller:'FriendDetailCtrl'}}})
 	.state('tab.account', {url:'/account',	views : {'tab-account' : {templateUrl : 'templates/tab-account.html',controller : 'AccountCtrl'}}})
-    
-     .state('tab.questions',{url:'/questions',                views:{'tab-quiz':{templateUrl:'templates/quiz.html',      controller:'QuizService'}}}) 
+
+     .state('tab.questions',{url:'/questions',                views:{'tab-quiz':{templateUrl:'templates/quiz.html',      controller:'QuizCtrl'}}}) 
     .state('tab.question', {url:'/question/:questionId',views:{'tab-quiz':{templateUrl:'templates/question.html',controller:'QuestionCtrl'}}})
-	.state('tab.results',    {url:'/results',	                  views:{'tab-quiz':{templateUrl:'templates/results.html',  controller:'ResultsCtrl'  }}}) 
+	.state('tab.results',    {url:'/results',	                  views:{'tab-quiz':{templateUrl:'templates/results.html',  controller:'ResultsCtrl'  }}})
     ;
 
 	// if none of the above states are matched, use this as the fallback
