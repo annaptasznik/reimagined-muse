@@ -25,32 +25,36 @@ angular.module('starter.services', [])
   // gallery and return the gallery information...
   // using regex?
   // Parse between the first comma and the second comma.
-  var returnGalleryFromBeacon = function(alias) {
+  var returnObjectsInGallery = function(id) {
 
-    var gallery = {},
-        objects = [];
+    var gallery = {
+      id: id,
+      title : "",
+      objects : []
+    };
 
-    // Gallery ID regex will be able to locate number, 
-    // since the gallery number always comes after "Gallery".
-    var galleryRegex = /Gallery \d+/;
-
+    var galleryRegex = new RegExp(" " + id + ",","g");
     // Gallery title regex will grab everything after Gallery ###, 
     // and before the last comma.
     var regex = /,.*,/g;
 
     $http.get('../data/PMAPowerofArtHackathon-collectiondata.json')
-        .then(function(results) {
-          var objects = results.data;
-          _.each(objects, function(object) {
-            
-            console.log('Description: ', object.galleryLocation);
-          }) 
-        }); 
+      .then(function(results) {
+        var objects = results.data;
+        _.each(objects, function(object) {
+          var desc = object.galleryLocation;
+          if (galleryRegex.test(desc)) {
+            gallery.objects.push(object)
+          }
+        });
+
+        console.log(gallery); 
+      }); 
   };
 
   return {
     current: function() {
-      returnGalleryFromBeacon(163);
+      returnObjectsInGallery("163");
     },
     // Return user's previous location?
     // Could be used to "bridge the gap" -- provide facts about the purposeful transition between locations?
