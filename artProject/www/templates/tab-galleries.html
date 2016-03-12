@@ -1,0 +1,19 @@
+<ion-view view-title="Galleries">
+  <ion-content>
+    <ion-list>
+      <ion-item class="item-remove-animate item-avatar item-icon-right" ng-repeat="g in galleries" type="item-text-wrap">
+        <img ng-src="img/thumbnails/{{g.imageFilename}}">
+        <h2>{{g.titleOfWork}}</h2>
+        <p>{{g.materials}}</p>
+        <p>{{g.date}}</p>
+        <p>{{g.creditLine}}</p>
+        <p>{{g.galleryLocation}}</p>
+        <i class="icon ion-chevron-right icon-accessory"></i>
+
+        <ion-option-button class="button-assertive" ng-click="remove(chat)">
+          yay
+        </ion-option-button>
+      </ion-item>
+    </ion-list>
+  </ion-content>
+</ion-view>
