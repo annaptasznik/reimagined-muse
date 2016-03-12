@@ -54,29 +54,44 @@ angular.module('starter.controllers', [])
 
 })
 
-.controller('ChatCtrl', function($scope) {
+.controller('ChatCtrl', function($scope, Locations, $q) {
   $scope.myname;
   $scope.theirname = "Art";
   $scope.state = {};
   $scope.state.messages = [];
+
+  function makeMessage(name, message, delay) {
+    var deferred = $q.defer();
+    delay = delay || 2000;
+    $scope.state.status = name+" is typing...";
+    setTimeout(function() {
+      $scope.state.messages.push({
+        text: message,
+        datetime: new Date(),
+        sender: name
+      });
+      $scope.state.status = "";
+      $scope.$apply();
+      deferred.resolve();
+    }, delay);
+    return deferred.promise;
+  }
 
   try {
     $scope.myname = JSON.parse(window.localStorage.user).name;
   } catch (e) {
     $scope.myname = "you";
   }
+  var thing = Locations.current().then(function(data) {
+    $scope.gallery = data;
+    makeMessage("Art", "Hey "+$scope.myname+", welcome to the "+data.title+" gallery").then(function() {
 
-  $scope.state.status = "Art is typing...";
-
-  setTimeout(function() {
-    $scope.state.messages.push({
-      text: "Hey there, welcome to the European Art, 1850-1900",
-      datetime: new Date(),
-      sender: "Art"
+      makeMessage("Art", "Let me know if you have any questions, specifically around the history or process of the pieces in this gallery.");
     })
-    $scope.state.status = "";
-    $scope.$apply();
-  }, 2000);
+  });
+
+
+
 
 
 

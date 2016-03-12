@@ -1,11 +1,12 @@
 <ion-view view-title="">
-  <ion-content>
-    <h1>Test</h1>
-    <p>{{state.status}}</p>
-    <p ng-repeat="m in state.messages">
-      <span>{{hrTime(m.datetime)}}</span>
+  <ion-content padding="true">
+    <div ng-repeat="m in state.messages" style="overflow: auto;">
+      <span>{{m.sender}}</span>
       <br>
-      {{m.text}}
-    </p>
+      <p class="message {{ m.sender == 'Art' ? 'from-them' : 'from-me'}}">{{m.text}}</p>
+
+    </div>
+    <br>
+    <p>{{state.status}}</p>
   </ion-content>
 </ion-view>
