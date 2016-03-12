@@ -33,6 +33,9 @@ angular.module('starter.controllers', [])
 
 })
 
+.controller('ChatCtrl', function($scope) {
+
+})
 .controller('ChatDetailCtrl', function($scope, $stateParams, Chats) {
   $scope.chat = Chats.get($stateParams.chatId);
 })
@@ -46,13 +49,14 @@ angular.module('starter.controllers', [])
 .controller('WelcomeCtrl', function($scope, $rootScope, $state) {
   $scope.user = {};
   $scope.next = function(user){
-    $rootScope.user = user || { name: "you" };
+    window.localStorage.user = JSON.stringify(user);
     $state.go('welcome2', {user: user});
   };
 })
 
-.controller('Welcome2Ctrl', function($scope, $rootScope) {
+.controller('Welcome2Ctrl', function($scope, $rootScope, $state) {
+  $scope.user = $scope.user || JSON.parse(window.localStorage.user);
   $scope.getStarted = function(){
-    $state.go('chat', {});
+    $state.go('tab.galleries', {});
   };
 });
