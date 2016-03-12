@@ -82,6 +82,7 @@ angular.module('starter.controllers', [])
   } catch (e) {
     $scope.myname = "you";
   }
+
   var thing = Locations.current().then(function(data) {
     $scope.gallery = data;
     makeMessage("Art", "Hey "+$scope.myname+", welcome to the "+data.title+" gallery").then(function() {
@@ -98,19 +99,4 @@ angular.module('starter.controllers', [])
   $scope.hrTime = function(date) {
     return date.getHours()+":"+date.getMinutes()+":"+date.getSeconds();
   }
-})
-
-.controller('WelcomeCtrl', function($scope, $rootScope, $state) {
-  $scope.user = {};
-  $scope.next = function(user){
-    window.localStorage.user = JSON.stringify(user);
-    $state.go('welcome2', {user: user});
-  };
-})
-
-.controller('Welcome2Ctrl', function($scope, $rootScope, $state) {
-  $scope.user = $scope.user || JSON.parse(window.localStorage.user);
-  $scope.getStarted = function(){
-    $state.go('tab.galleries', {});
-  };
 });
