@@ -34,6 +34,8 @@ angular.module('starter.services', [])
     };
 
     var galleryRegex = new RegExp(" " + id + ",","g");
+    var removeRegexBeginning = /^\w*\s*\d*,/g;
+    var removeRegexEnding = /,(?=[^,]*$).*/g;
     // Gallery title regex will grab everything after Gallery ###, 
     // and before the last comma.
     var regex = /,.*,/g;
@@ -47,10 +49,16 @@ angular.module('starter.services', [])
             gallery.objects.push(object)
           }
         });
+        var galleryTitle = gallery.objects[0].galleryLocation;
 
-        console.log(gallery); 
+        galleryTitle = galleryTitle.replace(removeRegexBeginning, '');
+        galleryTitle = galleryTitle.replace(removeRegexEnding, '');
+
+        gallery.title = galleryTitle.trim();
+
+        return gallery;
       }); 
-  };
+  }
 
   return {
     current: function() {
