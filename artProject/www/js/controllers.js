@@ -41,4 +41,18 @@ angular.module('starter.controllers', [])
   $scope.settings = {
     enableFriends: true
   };
+})
+
+.controller('WelcomeCtrl', function($scope, $rootScope, $state) {
+  $scope.user = {};
+  $scope.next = function(user){
+    $rootScope.user = user || { name: "you" };
+    $state.go('welcome2', {user: user});
+  };
+})
+
+.controller('Welcome2Ctrl', function($scope, $rootScope) {
+  $scope.getStarted = function(){
+    $state.go('chat', {});
+  };
 });
