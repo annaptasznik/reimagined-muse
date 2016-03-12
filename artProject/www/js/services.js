@@ -20,8 +20,8 @@ angular.module('starter.services', [])
   ];
 
   // Alias is the gallery ID. What we want to do
-  // is grab the gallery ID, then search through 
-  // collection data to fetch an object in that 
+  // is grab the gallery ID, then search through
+  // collection data to fetch an object in that
   // gallery and return the gallery information...
   // using regex?
   // Parse between the first comma and the second comma.
@@ -36,11 +36,11 @@ angular.module('starter.services', [])
     var galleryRegex = new RegExp(" " + id + ",","g");
     var removeRegexBeginning = /^\w*\s*\d*,/g;
     var removeRegexEnding = /,(?=[^,]*$).*/g;
-    // Gallery title regex will grab everything after Gallery ###, 
+    // Gallery title regex will grab everything after Gallery ###,
     // and before the last comma.
     var regex = /,.*,/g;
 
-    $http.get('../data/PMAPowerofArtHackathon-collectiondata.json')
+    var res = $http.get('../data/PMAPowerofArtHackathon-collectiondata.json')
       .then(function(results) {
         var objects = results.data;
         _.each(objects, function(object) {
@@ -57,12 +57,14 @@ angular.module('starter.services', [])
         gallery.title = galleryTitle.trim();
 
         return gallery;
-      }); 
+      });
+
+      return res;
   }
 
   return {
     current: function() {
-      returnObjectsInGallery("163");
+      return returnObjectsInGallery("163");
     },
     // Return user's previous location?
     // Could be used to "bridge the gap" -- provide facts about the purposeful transition between locations?
@@ -74,7 +76,7 @@ angular.module('starter.services', [])
 
     }
   }
-  
+
 })
 
 .factory('Chats', function() {

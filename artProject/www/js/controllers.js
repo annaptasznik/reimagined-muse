@@ -29,7 +29,7 @@ angular.module('starter.controllers', [])
     Chats.remove(chat);
   };
 })
-.controller('GalleriesCtrl', function($scope, Galleries, $state) {
+.controller('GalleriesCtrl', function($scope, Locations, $state) {
   // With the new view caching in Ionic, Controllers are only called
   // when they are recreated or on app start, instead of every page change.
   // To listen for when this page is active (for example, to refresh data),
@@ -37,11 +37,15 @@ angular.module('starter.controllers', [])
   //
   //$scope.$on('$ionicView.enter', function(e) {
   //});
-  $scope.galleries = [];
-  Galleries.all().then(function(response) {
-    $scope.allGalleries = response.data;
-    // just grabbing top 100 for testing...
-    $scope.galleries = response.data.slice(0, 100);
+  // $scope.galleries = [];
+  // Galleries.all().then(function(response) {
+  //   $scope.allGalleries = response.data;
+  //   // just grabbing top 100 for testing...
+  //   $scope.galleries = response.data.slice(0, 100);
+  // });
+  $scope.gallery = {};
+  var thing = Locations.current().then(function(data) {
+    $scope.gallery = data;
   });
 
 })
