@@ -1,5 +1,24 @@
 angular.module('starter.services', [])
 
+.factory('Locations', function() {
+
+  return {
+    current: function() {
+
+    },
+    // Return user's previous location?
+    // Could be used to "bridge the gap" -- provide facts about the purposeful transition between locations?
+    previous: function() {
+
+    },
+    // Fetch adjacent locations?
+    next: function() {
+
+    }
+  }
+  
+})
+
 .factory('Chats', function() {
   // Might use a resource here that returns a JSON array
 
