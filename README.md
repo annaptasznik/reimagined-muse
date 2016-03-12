@@ -1,5 +1,7 @@
 # reimagined-muse
 
+Art Project is an app developed for The Power of Art hackathon (which took place March 11-13 2016).
+
 [Project ideas and notes on google doc. Please add your idea to this doc] (https://docs.google.com/document/d/1J-EhRF2pNlXsLHT5RU2ilyVfm4QQmpEDWUPV2UvQo_k/edit)
 
 dev env:
