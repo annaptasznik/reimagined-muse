@@ -1,7 +1,7 @@
 <ion-view view-title="Galleries">
   <ion-content>
     <ion-list>
-      <ion-item class="item-remove-animate item-avatar item-icon-right" ng-repeat="g in galleries" type="item-text-wrap">
+      <ion-item class="item-remove-animate item-avatar item-icon-right" ng-repeat="g in galleries" type="item-text-wrap" href="/#/galleries/{{g.objectid}}">
         <img ng-src="img/thumbnails/{{g.imageFilename}}">
         <h2>{{g.titleOfWork}}</h2>
         <p>{{g.materials}}</p>

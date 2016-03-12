@@ -16,7 +16,7 @@ angular.module('starter.controllers', [])
     Chats.remove(chat);
   };
 })
-.controller('GalleriesCtrl', function($scope, Galleries) {
+.controller('GalleriesCtrl', function($scope, Galleries, $state) {
   // With the new view caching in Ionic, Controllers are only called
   // when they are recreated or on app start, instead of every page change.
   // To listen for when this page is active (for example, to refresh data),
@@ -29,6 +29,14 @@ angular.module('starter.controllers', [])
     $scope.allGalleries = response.data;
     // just grabbing top 100 for testing...
     $scope.galleries = response.data.slice(0, 100);
+  });
+
+})
+
+.controller('GalleriesDetailCtrl', function($scope, $stateParams, Galleries) {
+  $scope.item = {};
+  Galleries.all().then(function(response) {
+    $scope.item = response.data.filter(function(item){ return item.objectid == $stateParams.objectid; })[0];
   });
 
 })

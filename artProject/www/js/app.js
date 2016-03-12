@@ -68,6 +68,11 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services'])
         }
       }
   })
+  .state('gallery-detail', {
+      url: '/galleries/:objectid',
+      templateUrl: 'templates/tab-galleries-detail.html',
+      controller: 'GalleriesDetailCtrl'
+  })
   .state('tab.chat', {
         url: '/chat',
         views: {
