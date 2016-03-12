@@ -1,14 +1,11 @@
 angular.module('starter.controllers', [])
 
 .controller('DashCtrl', function($scope, Locations) {
-  $scope.location = {};
+  $scope.location = Locations.current();
 })
 
-.controller('LocationsCtrl', function($scope, $http) {
-  $http.get('../data/PMAPowerofArtHackathon-locations.json')
-        .then(function(results) {
-          $scope.locations = results.data;
-        }); 
+.controller('LocationsCtrl', function($scope, Locations) {
+  $scope.location = Locations.current();
 })
 
 .controller('BeaconsCtrl', function($scope, $http) {
@@ -16,7 +13,7 @@ angular.module('starter.controllers', [])
         .then(function(results) {
           $scope.beacons = results.data;
         });
-});
+})
 
 .controller('ChatsCtrl', function($scope, Chats) {
   // With the new view caching in Ionic, Controllers are only called

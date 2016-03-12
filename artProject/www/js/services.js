@@ -1,10 +1,56 @@
 angular.module('starter.services', [])
 
-.factory('Locations', function() {
+.factory('Locations', function($http) {
+
+  // Dummy Data
+  var locations = [
+  {
+    id: "160",
+    gallery: "European Art 1850-1900"
+  }, {
+    id: "161",
+    gallery: "European Art 1850-1900"
+  }, {
+    id: "162",
+    gallery: "European Art 1850-1900"
+  }, {
+    id: "163",
+    gallery: "European Art 1850-1900"
+  }
+  ];
+
+  // Alias is the gallery ID. What we want to do
+  // is grab the gallery ID, then search through 
+  // collection data to fetch an object in that 
+  // gallery and return the gallery information...
+  // using regex?
+  // Parse between the first comma and the second comma.
+  var returnGalleryFromBeacon = function(alias) {
+
+    var gallery = {},
+        objects = [];
+
+    // Gallery ID regex will be able to locate number, 
+    // since the gallery number always comes after "Gallery".
+    var galleryRegex = /Gallery \d+/;
+
+    // Gallery title regex will grab everything after Gallery ###, 
+    // and before the last comma.
+    var regex = /,.*,/g;
+
+    $http.get('../data/PMAPowerofArtHackathon-collectiondata.json')
+        .then(function(results) {
+          var objects = results.data;
+          _.each(objects, function(object) {
+            
+            console.log('Description: ', object.galleryLocation);
+          }) 
+        }); 
+  };
 
   return {
     current: function() {
-
+      returnGalleryFromBeacon(163);
     },
     // Return user's previous location?
     // Could be used to "bridge the gap" -- provide facts about the purposeful transition between locations?
@@ -71,8 +117,6 @@ angular.module('starter.services', [])
 })
 
 .factory('Galleries', function($http) {
-
-
   return {
     all: function() {
       return $http.get('data/PMAPowerofArtHackathon-collectiondata.json');
