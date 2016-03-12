@@ -1,9 +1,5 @@
 angular.module('starter.controllers', [])
 
-.controller('DashCtrl', function($scope, Locations) {
-  $scope.location = Locations.current();
-})
-
 .controller('LocationsCtrl', function($scope, Locations) {
   $scope.location = Locations.current();
 })
@@ -59,16 +55,34 @@ angular.module('starter.controllers', [])
 })
 
 .controller('ChatCtrl', function($scope) {
+  $scope.myname;
+  $scope.theirname = "Art";
+  $scope.state = {};
+  $scope.state.messages = [];
 
-})
-.controller('ChatDetailCtrl', function($scope, $stateParams, Chats) {
-  $scope.chat = Chats.get($stateParams.chatId);
-})
+  try {
+    $scope.myname = JSON.parse(window.localStorage.user).name;
+  } catch (e) {
+    $scope.myname = "you";
+  }
 
-.controller('AccountCtrl', function($scope) {
-  $scope.settings = {
-    enableFriends: true
-  };
+  $scope.state.status = "Art is typing...";
+
+  setTimeout(function() {
+    $scope.state.messages.push({
+      text: "Hey there, welcome to the European Art, 1850-1900",
+      datetime: new Date(),
+      sender: "Art"
+    })
+    $scope.state.status = "";
+    $scope.$apply();
+  }, 2000);
+
+
+
+  $scope.hrTime = function(date) {
+    return date.getHours()+":"+date.getMinutes()+":"+date.getSeconds();
+  }
 })
 
 .controller('WelcomeCtrl', function($scope, $rootScope, $state) {

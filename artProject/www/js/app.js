@@ -49,16 +49,6 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services'])
 
   // Each tab has its own nav history stack:
 
-  .state('tab.dash', {
-    url: '/dash',
-    views: {
-      'tab-dash': {
-        templateUrl: 'templates/tab-dash.html',
-        controller: 'DashCtrl'
-      }
-    }
-  })
-
   .state('tab.galleries', {
       url: '/galleries',
       views: {
@@ -74,30 +64,11 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services'])
       controller: 'GalleriesDetailCtrl'
   })
   .state('tab.chat', {
-        url: '/chat',
-        views: {
-          'tab-chat': {
-            templateUrl: 'templates/tab-chat.html',
-            controller: 'ChatCtrl'
-          }
-        }
-      })
-      .state('tab.chat-detail', {
-        url: '/chats/:chatId',
-        views: {
-          'tab-chats': {
-            templateUrl: 'templates/chat-detail.html',
-            controller: 'ChatDetailCtrl'
-          }
-        }
-      })
-
-  .state('tab.account', {
-    url: '/account',
+      url: '/chat',
     views: {
-      'tab-account': {
-        templateUrl: 'templates/tab-account.html',
-        controller: 'AccountCtrl'
+      'tab-chat': {
+        templateUrl: 'templates/tab-chat.html',
+        controller: 'ChatCtrl'
       }
     }
   });
